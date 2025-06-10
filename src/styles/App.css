@@ -1,0 +1,23 @@
+:root {
+  --dark-gray-color: #343d46;
+  --gray-color: #4f5b66;
+  --light-gray-color: #65737e;
+  --dark-white-color: #a7adba;
+  --white-color: #c0c5ce;
+}
+
+body {
+    background-color: var(--dark-gray-color);
+}
+
+.container {
+    width: min(80%, 1800px);
+    margin: 0 auto;
+    padding: 1em 0;
+}
+
+.game__title,
+.game__instruction {
+    color: var(--white-color);
+    margin-bottom: 0.5em;
+}

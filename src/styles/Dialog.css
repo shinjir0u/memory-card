@@ -1,0 +1,23 @@
+.dialog {
+  text-align: center;
+  margin: 0 auto;
+  transform: translateY(200%);
+  position: absolute;
+  background-color: var(--gray-color);
+  color: var(--white-color);
+  font-weight: bold;
+}
+
+.dialog::backdrop {
+  background-color: var(--gray-color);
+  opacity: 0.5;
+}
+
+.reset-button {
+    margin-top: 1em;
+  background-color: var(--white-color);
+  border: none;
+  color: var(--gray-color);
+  cursor: pointer;
+}
+

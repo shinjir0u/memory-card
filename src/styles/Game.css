@@ -1,0 +1,25 @@
+.score-board {
+  background-color: var(--white-color);
+  margin-bottom: 1em;
+  color: var(--dark-gray-color);
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5em;
+  border-radius: 0.5em;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1em;
+  background-color: var(--dark-white-color);
+  padding: 1em;
+}
+
+@media (min-width: 75em) {
+  .card {
+    width: min(350px, 25%);
+  }
+}

@@ -1,0 +1,17 @@
+.card {
+  background-color: var(--dark-gray-color);
+  text-align: center;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: 200px min-content;
+  justify-items: center;
+  padding: 1em;
+  gap: 0.5em;
+  border-radius: 0.5em;
+  width: max(200px, 25%);
+}
+
+.card__name {
+  color: var(--white-color);
+  font-weight: bold;
+}
