@@ -14,7 +14,7 @@ function Giphy({ name }) {
     if (!ignored) {
       async function fetchUrl() {
         const response = await fetch(url).then((response) => response.json());
-        setImageUrl(response.data[0].images.fixed_height.url);
+        setImageUrl(response.data[0].images.original.url);
         console.log(response);
       }
       

@@ -24,14 +24,16 @@ function Game({ characters, bestScore, onRetry, onBestScore }) {
       <Scoreboard score={correctClicks} bestScore={bestScore} />
 
       <div className="cards">
-        {characters.map((character) => (
-          <Card
-            name={character}
-            key={character}
-            onGameOver={() => setGameOver(true)}
-            onCorrectClick={() => setCorrectClicks(correctClicks + 1)}
-          />
-        ))}
+        {characters
+          .map((character) => (
+            <Card
+              name={character}
+              key={character}
+              onGameOver={() => setGameOver(true)}
+              onCorrectClick={() => setCorrectClicks(correctClicks + 1)}
+            />
+          ))
+          .sort(() => Math.random() - 0.5)}
       </div>
       <Dialog message={message} onRetry={onRetry} />
     </div>
